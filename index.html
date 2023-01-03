@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w-full h-full bg-gradient-to-r from-emerald-700	 via-emerald-600 to-emerald-300">
+        <h1 class="text-center text-[50px] font-extrabold tracking-normal">
+            Currency Converter
+        </h1>
+        <div class="w-screen h-screen flex justify-center items-center">
+            <div class="border border-4 border-green-900 w-2/5 h-3/4">
+                <form>
+                    <div>
+                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">Amount to convert : </label>
+                      <input type="number" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="0.00" />
+                    </div>
+                    <div>
+                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">From : </label>
+                      <input type="text" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" />
+                    </div>
+                    <div>
+                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">To : </label>
+                      <input type="text" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" />
+                    </div><br><br>
+                    <button type="submit" class="ml-20 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-2.5 text-center ">Convert</button>
+                    <button type="submit" class="ml-48 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-3 text-center ">Reset</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
