@@ -5,34 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Convert Your Currency</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="w-full h-full bg-gradient-to-r from-emerald-700	 via-emerald-600 to-emerald-300">
         <h1 class="text-center text-[50px] font-extrabold tracking-normal">
-            Currency Converter
+          Currency Converter
         </h1>
         <div class="w-screen h-screen flex justify-center items-center">
             <div class="border border-4 border-green-900 w-2/5 h-3/4">
-                <form>
-                    <div>
-                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">Amount to convert : </label>
-                      <input type="number" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="0.00" />
+                <form action="#">
+                    <div class="amount">
+                        <p class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">Enter the amount to convert </p>
+                        <input type="text" value="1"class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="0.00" >
                     </div>
-                    <div>
-                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">From : </label>
-                      <input type="text" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" />
+                    <div class="drop-list">
+                        <div class="from">
+                            <p class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">From</p>
+                            <div class="select-box ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" >
+                                <select>
+                                    <Option Value="AED">AED</Option>
+                                    <Option Value="ARS">ARS</Option>
+                                    <Option Value="AUD">AUD</Option>
+                                    <Option Value="BGN">BGN</Option>
+                                    <Option Value="BRL">BRL</Option>
+                                    <Option Value="BSD">BSD</Option>
+                                    <Option Value="CAD">CAD</Option>
+                                    <Option Value="CHF">CHF</Option>
+                                    <Option Value="CLP">CLP</Option>
+                                    <Option Value="CNY">CNY</Option>
+                                    <Option Value="COP">COP</Option>
+                                    <Option Value="CZK">CZK</Option>
+                                    <Option Value="DKK">DKK</Option>
+                                    <Option Value="DOP">DOP</Option>
+                                    <Option Value="EGP">EGP</Option>
+                                    <Option Value="EUR">EUR</Option>
+                                    <Option Value="FJD">FJD</Option>
+                                    <Option Value="GBP">GBP</Option>
+                                    <Option Value="GTQ">GTQ</Option>
+                                    <Option Value="HKD">HKD</Option>
+                                    <Option Value="HRK">HRK</Option>
+                                    <Option Value="HUF">HUF</Option>
+                                    <Option Value="IDR">IDR</Option>
+                                    <Option Value="ILS">ILS</Option>
+                                    <Option Value="INR">INR</Option>
+                                    <Option Value="ISK">ISK</Option>
+                                    <Option Value="JPY">JPY</Option>
+                                    <Option Value="KRW">KRW</Option>
+                                    <Option Value="KZT">KZT</Option>
+                                    <Option Value="MXN">MXN</Option>
+                                    <Option Value="MYR">MYR</Option>
+                                    <Option Value="NOK">NOK</Option>
+                                    <Option Value="NZD">NZD</Option>
+                                    <Option Value="PAB">PAB</Option>
+                                    <Option Value="PEN">PEN</Option>
+                                    <Option Value="PHP">PHP</Option>
+                                    <Option Value="PKR">PKR</Option>
+                                    <Option Value="PLN">PLN</Option>
+                                    <Option Value="PYG">PYG</Option>
+                                    <Option Value="RON">RON</Option>
+                                    <Option Value="RUB">RUB</Option>
+                                    <Option Value="SAR">SAR</Option>
+                                    <Option Value="SEK">SEK</Option>
+                                    <Option Value="SGD">SGD</Option>
+                                    <Option Value="THB">THB</Option>
+                                    <Option Value="TRY">TRY</Option>
+                                    <Option Value="TWD">TWD</Option>
+                                    <Option Value="UAH">UAH</Option>
+                                    <Option Value="USD" Selected>USD</Option>
+                                    <Option Value="UYU">UYU</Option>
+                                    <Option Value="VND">VND</Option>
+                                    <Option Value="ZAR">ZAR</Option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="to">
+                            <p class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">To</p>
+                            <div class="select-box ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" ">
+                                <select>
+                                    <Option Value="AED">AED</Option>
+                                    <Option Value="ARS">ARS</Option>
+                                    <Option Value="AUD">AUD</Option>
+                                    <Option Value="BGN">BGN</Option>
+                                    <Option Value="BRL">BRL</Option>
+                                    <Option Value="BSD">BSD</Option>
+                                    <Option Value="CAD">CAD</Option>
+                                    <Option Value="CHF">CHF</Option>
+                                    <Option Value="CLP">CLP</Option>
+                                    <Option Value="CNY">CNY</Option>
+                                    <Option Value="COP">COP</Option>
+                                    <Option Value="CZK">CZK</Option>
+                                    <Option Value="DKK">DKK</Option>
+                                    <Option Value="DOP">DOP</Option>
+                                    <Option Value="EGP">EGP</Option>
+                                    <Option Value="EUR">EUR</Option>
+                                    <Option Value="FJD">FJD</Option>
+                                    <Option Value="GBP">GBP</Option>
+                                    <Option Value="GTQ">GTQ</Option>
+                                    <Option Value="HKD">HKD</Option>
+                                    <Option Value="HRK">HRK</Option>
+                                    <Option Value="HUF">HUF</Option>
+                                    <Option Value="IDR">IDR</Option>
+                                    <Option Value="ILS">ILS</Option>
+                                    <Option Value="INR" Selected>INR</Option>
+                                    <Option Value="ISK">ISK</Option>
+                                    <Option Value="JPY">JPY</Option>
+                                    <Option Value="KRW">KRW</Option>
+                                    <Option Value="KZT">KZT</Option>
+                                    <Option Value="MXN">MXN</Option>
+                                    <Option Value="MYR">MYR</Option>
+                                    <Option Value="NOK">NOK</Option>
+                                    <Option Value="NZD">NZD</Option>
+                                    <Option Value="PAB">PAB</Option>
+                                    <Option Value="PEN">PEN</Option>
+                                    <Option Value="PHP">PHP</Option>
+                                    <Option Value="PKR">PKR</Option>
+                                    <Option Value="PLN">PLN</Option>
+                                    <Option Value="PYG">PYG</Option>
+                                    <Option Value="RON">RON</Option>
+                                    <Option Value="RUB">RUB</Option>
+                                    <Option Value="SAR">SAR</Option>
+                                    <Option Value="SEK">SEK</Option>
+                                    <Option Value="SGD">SGD</Option>
+                                    <Option Value="THB">THB</Option>
+                                    <Option Value="TRY">TRY</Option>
+                                    <Option Value="TWD">TWD</Option>
+                                    <Option Value="UAH">UAH</Option>
+                                    <Option Value="USD" >USD</Option>
+                                    <Option Value="UYU">UYU</Option>
+                                    <Option Value="VND">VND</Option>
+                                    <Option Value="ZAR">ZAR</Option>
+                                </select>
+                            </div>
+                        </div><br><br>
+                        <div class="exchange-rates text-white text-2xl ml-14">
+                        Getting Exchange Rate...
+                        </div>
+                        <br><br>
+                        <button class="ml-20 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-2.5 text-center ">Get Exchange Rate</button>
                     </div>
-                    <div>
-                      <label class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">To : </label>
-                      <input type="text" class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" />
-                    </div><br><br>
-                    <button type="submit" class="ml-20 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-2.5 text-center ">Convert</button>
-                    <button type="submit" class="ml-48 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-3 text-center ">Reset</button>
-                  </form>
+                </form>
             </div>
         </div>
     </div>
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
