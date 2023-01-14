@@ -15,8 +15,14 @@
           Currency Converter
         </h1>
         <div class="w-screen h-screen flex justify-center items-center">
-            <div class="border border-4 border-green-900 w-2/5 h-3/4">
-                <form action="#">
+                <form class="signup-form
+                    rounded-2xl
+                    text-[#1A2421]
+                    backdrop-blur-lg
+                    [ p-8 md:p-10 lg:p-10 ]
+                    [ bg-gradient-to-b from-white/60 to-white/30 ]
+                    [ border-[1px] border-solid border-white border-opacity-30 ]
+                    [ shadow-black/70 shadow-2xl ]" action="#">
                     <div class="amount">
                         <p class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">Enter the amount to convert </p>
                         <input type="text" value="1"class="ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="0.00" >
@@ -83,7 +89,7 @@
                         </div>
                         <div class="to">
                             <p class="mb-2 px-7 pt-8 block text-2xl font-medium dark:text-white">To</p>
-                            <div class="select-box ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency" ">
+                            <div class="select-box ml-6 block w-11/12 rounded-lg border p-2.5 text-xl dark:bg-gray-300 dark:text-black dark:placeholder-gray-400" placeholder="Currency">
                                 <select>
                                     <Option Value="AED">AED</Option>
                                     <Option Value="ARS">ARS</Option>
@@ -147,7 +153,6 @@
                         <button class="ml-20 text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-lg w-full sm:w-auto px-11 py-2.5 text-center ">Get Exchange Rate</button>
                     </div>
                 </form>
-            </div>
         </div>
     </div>
     <script src="country-list.js"></script>
